@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beautiful Animated Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 60px 20px;
+      animation: fadeInDown 1.2s ease;
+    }
+
+    h1 {
+      font-size: 3em;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-top: 20px;
+    }
+
+    section {
+      padding: 80px 20px;
+      background-color: white;
+      color: #333;
+      transition: background-color 0.5s ease;
+    }
+
+    section:hover {
+      background-color: #f3f3f3;
+    }
+
+    .btn {
+      margin-top: 30px;
+      display: inline-block;
+      background-color: #fff;
+      color: #2575fc;
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #2575fc;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    footer {
+      background-color: #222;
+      color: #bbb;
+      padding: 40px 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Awesome Page</h1>
+    <p>Smooth animations, beautiful design, and good vibes.</p>
+    <a href="#about" class="btn">Learn More</a>
+  </header>
+
+  <section id="about">
+    <h2>About This Page</h2>
+    <p>This page is built with HTML5, CSS3, and lots of creativity. You can easily host it and show it to the world.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Designed with ❤️ by You</p>
+  </footer>
+
+</body>
+</html>
